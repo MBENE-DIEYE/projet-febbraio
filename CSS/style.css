@@ -8,21 +8,126 @@
 }
 
 
-/* ---------start navbar----- */
-
-
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", serif ;
 }
 
-.navbar-right ul{
+body{
+    background-color: #f8f8f8;
+}
+/* ---------start navbar----- */
+
+.btn{
+    display: inline-block;
+    color: var(--bg-color);
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+   width: 100%;
+   
+}
+ 
+#pizza{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.navbar a{
+    color: var(--text-color);
+     font-size: 1rem; 
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.nav-right ul{
     display: flex;
     list-style: none;
 }
+.nav-right ul{
+    padding: 10px 20px;
+}
 
-.navbar-right ul a{
+.nav-right ul a{
     text-decoration: none;
     margin: 10px;
+    
+}
+.nav-right ul a:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.nav-right ul li:last-child{
+    width: 15px;
+    height: 15px;
+}
+.nav-right ul li:last-child img{
+     width: 100%; 
+}
+
+/* -----------------end navbar------------ */
+section{
+    padding: 50px 10%;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.home-left{
+    width: 50%;
+}
+.home-left h1{
+    font-size: var(--big-font);
+    color: var(--primary-color);
+}
+.home-left h2{
+    font-size: var(--h2-font);
+    margin: 1rem 0 1rem;
+}
+.home-right{
+    width: 50%;
+}
+.home-right img{
+    width: 75%;
+    border-radius: 0.5rem;
+}
+/* -------------start about------------ */
+#about{
+    display: flex;
+}
+
+.about-left,.about-right{
+    width: 50%;
+}
+.about-left img{
+    width: 80%;
+    border-radius: 0.5rem;
+}
+.about-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+.about-right span{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.about-right h2{
+    font-size: var(--h2-font);
+}
+.about-right p{
+    margin: 0.8rem 0 1.8rem;
 }
