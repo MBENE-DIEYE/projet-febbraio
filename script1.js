@@ -4,7 +4,7 @@ const menu = document.querySelector('.hidden-menu')
 const closeIcon= document.querySelector('#colseIcone')
 
 show.addEventListener('click',() => {
-    menu.classList.remove('hidden')
+    menu.classList.toggle('hidden')
 })
  
 
