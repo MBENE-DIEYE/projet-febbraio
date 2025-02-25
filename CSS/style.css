@@ -267,6 +267,7 @@ section{
         height: 100vh;
         /* background-color: #1e1c2a; */
         color:  white;
+        
        
     }
 
@@ -288,4 +289,5 @@ section{
 
     .hidden{
         display: none;
+        background-color: green;
     }
